@@ -1,10 +1,12 @@
 import { useState } from "react";
-import LayoutComponents from "../LayoutComponents";
+import LayoutComponents from "../components/Layout/LayoutComponents";
 
 
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  console.log('login');
   
   return (
     <LayoutComponents>
