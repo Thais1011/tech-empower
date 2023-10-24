@@ -6,7 +6,7 @@ const defaultCartState = {
   totalAmount: 0,
 };
 
-const cardReducer = (state, action) => {
+const cartReducer = (state, action) => {
   if (action.type === "ADD") {
     const updatedTotalAmount =
       state.totalAmount + action.item.price * action.item.amount;
@@ -67,7 +67,7 @@ const cardReducer = (state, action) => {
 };
 const CartProvider = (props) => {
   const [cartState, dispatchCartAction] = useReducer(
-    cardReducer,
+    cartReducer,
     defaultCartState
   );
 

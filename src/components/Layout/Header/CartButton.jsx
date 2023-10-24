@@ -1,9 +1,9 @@
-import CardIcon from "../Cart/CartIcon";
-import classes from "./HeaderCartButton.module.css";
+import CartIcon from "../../../pages/Cart/CartIcon";
+import classes from "./CartButton.module.css";
 import { useContext, useEffect, useState } from "react";
-import CartContext from "../../store/cart-context";
+import CartContext from "../../../store/cart-context";
 
-const HeaderCartButton = (props) => {
+const CartButton = (props) => {
   const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
   const cartCtx = useContext(CartContext);
 
@@ -24,7 +24,7 @@ const HeaderCartButton = (props) => {
   return (
     <button className={btnClasses} onClick={props.onClick}>
       <span className={classes.icon}>
-        <CardIcon />
+        <CartIcon />
       </span>
       <span> Your Cart</span>
       <span className={classes.badge}>{numberOfCartItems}</span>
@@ -32,4 +32,4 @@ const HeaderCartButton = (props) => {
   );
 };
 
-export default HeaderCartButton;
+export default CartButton;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LayoutComponents from "../components/Layout/LayoutComponents";
+import LayoutComponents from "../../components/Layout/AuthLayout/LayoutComponents";
 import { Checkbox, FormControlLabel } from "@mui/material";
 import { yellow } from "@mui/material/colors";
 

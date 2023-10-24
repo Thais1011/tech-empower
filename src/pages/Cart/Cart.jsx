@@ -4,7 +4,7 @@ import { useContext } from "react";
 import CartContext from "../../store/cart-context";
 import CartItem from "./CartItem";
 
-const Card = (props) => {
+const Cart = (props) => {
   const cartCtx = useContext(CartContext);
 
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
@@ -17,8 +17,8 @@ const Card = (props) => {
     cartCtx.addItem({ ...item, amount: 1 });
   };
 
-  const cardItems = (
-    <ul className={classes["card-items"]}>
+  const cartItems = (
+    <ul className={classes["cart-items"]}>
       {cartCtx.items.map((item) => (
         <CartItem
           key={item.id}
@@ -34,7 +34,7 @@ const Card = (props) => {
 
   return (
     <Modal onClose={props.onClose}>
-      {cardItems}
+      {cartItems}
       <div className={classes.total}>
         <span> Total Amount</span>
       </div>
@@ -49,4 +49,4 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default Cart;
