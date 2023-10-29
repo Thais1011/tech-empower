@@ -4,7 +4,8 @@ import { Register } from "../pages/Register/Register";
 import { Products } from "../pages/Products/Products";
 import { NotFound } from "../pages/NotFound/NotFound";
 import { LoggedInLayout } from "../components/Layout/LoggedInLayout/LoggedInLayout";
-import {Cart} from "../pages/Cart/Cart"
+
+//ainda nao está pronta
 
 
 export default function  Router ()  {
@@ -16,7 +17,6 @@ export default function  Router ()  {
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/not-found" element={<NotFound/>} />
-                <Route path="/cart" element={<Cart/>}/>
                 <Route element={<LoggedInLayout/>}>
                   <Route path="/products" element={<Products />} />
                 </Route>
