@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import classes from "./Products.module.css";
 
 //aqui dentro nao havera uma pagina de detalhamento de produtos, e sim um modal que abrirá ao clicar em um produto
+
 //estou criando uma API para usar, essa de pokemon não está boa para o que eu quero fazer
 
 export const Products = () => {
