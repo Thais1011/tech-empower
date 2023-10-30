@@ -6,18 +6,23 @@ import whatsapp from "../../../assets/whatsapp.png";
 
 export function Footer () {
     return (
-        <>
         <div className={classes.footer}>
-            <h1>How to contact us</h1>
-            <p>Whatsapp</p>
-            <p>Instagram</p>
-            <p>Email</p>
+            <img className={classes.logo} src="src/assets/bees.png" alt="logo" />
+            <ul className={classes.informations}>How to contact us
+            <li>Whatsapp</li>
+            <li>Instagram</li>
+            <li>Email</li>
+            </ul>
+        
+            <p className={classes.slogan}>To a future with more Cheers</p>
+
+            <p className={classes.aboutUs}>About Us</p>
 
         </div>
         
         
         
-        </>
+        
         
     )
 }

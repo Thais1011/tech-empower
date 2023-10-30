@@ -1,8 +1,7 @@
 .footer {
-  position: fixed;
   bottom: 0;
   width: 100%;
-  height: 5rem;
+  height: 150px;
   background-color: #111;
   color: yellow;
   display: flex;
@@ -11,4 +10,32 @@
   padding: 0 10%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 10;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+}
+
+.informations {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  left: 5px;
+}
+
+.slogan {
+}
+
+.aboutUs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  left: 5px;
 }
