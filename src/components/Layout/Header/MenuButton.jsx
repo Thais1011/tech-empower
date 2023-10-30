@@ -1,7 +1,8 @@
 import { useState } from "react";
 import classes from "./MenuButton.module.css";
 
-//preciso estilizar melhor o botão quando aberto!
+//Daria facilmente para colocar outro botão com a função de menu sem nenhum problema, mas nao sei o que colocar 
+//no menu, então coloquei apenas dois botões para mostrar
 
 const MenuButton =() => { 
     const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
@@ -33,12 +34,10 @@ const MenuButton =() => {
         <span>Menu</span>
         </button>
         {showMenu && (
-          <div className={classes.menu}>
-            <ul>
-              <button>See More</button>
-              <button>Contact Us</button>
-              <button>Option 3</button>
-            </ul>
+          <div>
+              <button className={classes.buttonMore}>Home</button>
+              <button className={classes.buttonMore}>Contact Us</button>
+            
           </div>
 )}
       </div>

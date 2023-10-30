@@ -1,6 +1,8 @@
 import { useState } from "react";
 import classes from "./LoginButton.module.css";
 
+//Ainda não está funcional!
+
 const LoginButton =() => { 
     const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
 

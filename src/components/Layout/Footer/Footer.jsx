@@ -3,6 +3,10 @@ import AboutUs from "./AboutUs/AboutUs";
 import Contact from "./Contacts/Contact";
 
 
+
+//Botão About Us mexendo de lugar
+
+
 export function Footer () {
     return (
         <div className={classes.footer}>

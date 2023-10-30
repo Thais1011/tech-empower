@@ -3,6 +3,8 @@ import classes from "./CartButton.module.css";
 import { useContext, useEffect, useState } from "react";
 import CartContext from "../../../store/cart-context";
 
+//Ainda não está funcional!
+
 const CartButton = (props) => {
   const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
   const cartCtx = useContext(CartContext);
