@@ -35,9 +35,9 @@ const MenuButton =() => {
         {showMenu && (
           <div className={classes.menu}>
             <ul>
-              <li>See More</li>
-              <li>Contact Us</li>
-              <li>Option 3</li>
+              <button>See More</button>
+              <button>Contact Us</button>
+              <button>Option 3</button>
             </ul>
           </div>
 )}

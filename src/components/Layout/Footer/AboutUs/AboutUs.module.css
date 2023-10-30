@@ -16,3 +16,9 @@
 .button:active {
   background-color: #808080;
 }
+
+.address {
+  color: yellow;
+  margin: 1rem 0;
+  align-items: center;
+}
