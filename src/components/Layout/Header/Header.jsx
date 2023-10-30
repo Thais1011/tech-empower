@@ -1,6 +1,7 @@
 import classes from "./Header.module.css";
 import HeaderCartButton from "./CartButton";
 import MenuButton from "./MenuButton";
+import LoginButton from "./LoginButton";
 
 
 const Header = (props) => {
@@ -11,6 +12,7 @@ const Header = (props) => {
         <h1>Pokemons</h1>
         <MenuButton onClick={props.onShowMenu} />
         <HeaderCartButton onClick={props.onShowCart} />
+        <LoginButton/>
       </header>
     </div>
   );

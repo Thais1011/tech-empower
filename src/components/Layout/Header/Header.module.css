@@ -35,14 +35,16 @@
   left: 0;
 }
 
-.button {
-  button {
-    background-color: black;
-    color: yellow;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
+.buttonLogin {
+  cursor: pointer;
+  font: inherit;
+  font-size: 1rem;
+  border: none;
+  background-color: #2e2e2e;
+  color: yellow;
+  padding: 0.5rem 3rem;
+  border-radius: 25px;
+  font-weight: bold;
 }
 
 .button:hover {
