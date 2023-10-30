@@ -5,6 +5,7 @@ import Contact from "./Contacts/Contact";
 
 
 //Botão About Us mexendo de lugar
+//Gostaria de retirar as imagens de whatsapp e instagram depois de avaliado o projeto
 
 
 export function Footer () {
