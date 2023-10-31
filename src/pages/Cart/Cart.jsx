@@ -8,7 +8,7 @@ import CartItem from "./CartItem";
 //ainda irei tornar ele funcional, estava fazendo ele em outro projeto
 
 
-const Cart = (props) => {
+const Cart = () => {
   const cartCtx = useContext(CartContext);
 
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
@@ -37,14 +37,14 @@ const Cart = (props) => {
   );
 
   return (
-    <Modal onClose={props.onClose}>
+    <Modal onClose>
       {cartItems}
       <div className={classes.total}>
         <span> Total Amount</span>
       </div>
       <div>{totalAmount} </div>
       <div className={classes.actions}>
-        <button className={classes["button--alt"]} onClick={props.onClose}>
+        <button className={classes["button--alt"]}>
           Close
         </button>
         {hasItems && <button className={classes.button}>Order</button>}
