@@ -3,9 +3,9 @@ import classes from "./Products.module.css";
 import Banner from "../../components/Banner/Banner";
 import { Box, Grid, Modal } from "@mui/material";
 
-//aqui dentro nao havera uma pagina de detalhamento de produtos, e sim um modal que abrirá ao clicar em um produto
+//aqui dentro nao havera uma pagina de detalhamento de produtos, e sim um modal que abre ao clicar em um produto
 
-//estou criando uma API para usar, essa de pokemon não está boa para o que eu quero fazer
+//estou criando uma API para usar definitiva com o server.json, essa é provisoria
 
 export const Products = () => {
   const [products, setProducts] = useState([]);
