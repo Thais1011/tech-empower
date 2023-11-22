@@ -3,8 +3,7 @@ import classes from "./CartButton.module.css";
 import { useContext, useEffect, useState } from "react";
 import CartContext from "../../../store/cart-context";
 import Cart from "../../../pages/Cart/Cart";
-
-//Ainda não está funcional!
+import { Link } from "react-router-dom";
 
 const CartButton = () => {
   const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
@@ -25,13 +24,15 @@ const CartButton = () => {
     setBtnIsHighlighted(true);
   }, [cartCtx.items]);
   return (
-    <button className={btnClasses} onClick={<Cart/>}>
-      <span className={classes.icon}>
-        <CartIcon />
-      </span>
-      <span> Your Cart</span>
-      <span className={classes.badge}>{numberOfCartItems}</span>
-    </button>
+    <Link to="/cart">
+      <button className={btnClasses} onClick={<Cart />}>
+        <span className={classes.icon}>
+          <CartIcon />
+        </span>
+        <span> Your Cart</span>
+        <span className={classes.badge}>{numberOfCartItems}</span>
+      </button>
+    </Link>
   );
 };
 

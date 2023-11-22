@@ -1,12 +1,8 @@
 import classes from "./Cart.module.css";
-import Modal from "../../components/Modal/Modal";
 import { useContext } from "react";
 import CartContext from "../../store/cart-context";
 import CartItem from "./CartItem";
-
-
-//ainda irei tornar ele funcional, estava fazendo ele em outro projeto
-
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const cartCtx = useContext(CartContext);
@@ -37,19 +33,19 @@ const Cart = () => {
   );
 
   return (
-    <Modal onClose>
+    <div>
       {cartItems}
       <div className={classes.total}>
         <span> Total Amount</span>
       </div>
       <div>{totalAmount} </div>
       <div className={classes.actions}>
-        <button className={classes["button--alt"]}>
-          Close
-        </button>
+        <Link to="/products">
+          <button className={classes["button--alt"]}>Close</button>
+        </Link>
         {hasItems && <button className={classes.button}>Order</button>}
       </div>
-    </Modal>
+    </div>
   );
 };
 
