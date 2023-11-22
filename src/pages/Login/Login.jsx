@@ -1,28 +1,27 @@
 import { useState } from "react";
 import LayoutComponents from "../../components/Layout/AuthLayout/LayoutComponents";
-
+import { Link } from "react-router-dom";
 
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  console.log('login');
-  
+  console.log("login");
+
   return (
     <LayoutComponents>
       <form className="login-form">
         <span className="login-form-title"> Welcome </span>
 
-        <span className="login-form-title">
-        </span>
+        <span className="login-form-title"></span>
 
         <div className="wrap-input">
-           <input
-             required
-              className={email !== "" ? "has-val input" : "input"}
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+          <input
+            required
+            className={email !== "" ? "has-val input" : "input"}
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <span className="focus-input" data-placeholder="Email"></span>
         </div>
@@ -38,15 +37,18 @@ export const Login = () => {
           <span className="focus-input" data-placeholder="Password"></span>
         </div>
 
-        <div className="container-login-form-btn">
-          <button className="login-form-btn">Login</button>
-        </div>
+        <Link to="/products">
+          <div className="container-login-form-btn">
+            <button className="login-form-btn">Login</button>
+          </div>
+        </Link>
 
         <div className="text-center">
-          <span className="txt1">Dont you have an account?</span>
-
+          <Link to="/register">
+            <span className="txt1">Dont you have an account?</span>
+          </Link>
         </div>
-        </form>
-        </LayoutComponents>
-     );
+      </form>
+    </LayoutComponents>
+  );
 };

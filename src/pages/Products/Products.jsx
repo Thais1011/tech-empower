@@ -30,6 +30,11 @@ export const Products = () => {
     onGetProducts();
   }, []);
 
+  const submitHandler = (event) => {
+    event.preventDefault();
+    console.log("submitHandler");
+  };
+
   return (
     <CartProvider>
       <div className={classes.productPage}>
@@ -66,7 +71,9 @@ export const Products = () => {
             />
             <p>{product?.price}</p>
             <p>{product?.description}</p>
-            <button className={classes.button}>Add Cart</button>
+            <button className={classes.button} onClick={submitHandler}>
+              Add Cart
+            </button>
           </Box>
         </Modal>
       </div>
