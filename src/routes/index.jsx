@@ -5,6 +5,7 @@ import { Products } from "../pages/Products/Products";
 import { NotFound } from "../pages/NotFound/NotFound";
 import { LoggedInLayout } from "../components/Layout/LoggedInLayout/LoggedInLayout";
 import Cart from "../pages/Cart/Cart";
+import PaymentConfirmation from "../pages/PaymentConfirmation/PaymentConfirmation";
 
 export default function Router() {
   return (
@@ -12,10 +13,14 @@ export default function Router() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/not-found" element={<NotFound />} />
         <Route element={<LoggedInLayout />}>
           <Route path="/products" element={<Products />} />
           <Route path="/cart" element={<Cart />} />
+          <Route
+            path="/paymentConfirmation"
+            element={<PaymentConfirmation />}
+          />
+          <Route element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

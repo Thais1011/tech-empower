@@ -43,7 +43,9 @@ const Cart = () => {
         <Link to="/products">
           <button className={classes["button--alt"]}>Close</button>
         </Link>
-        {hasItems && <button className={classes.button}>Order</button>}
+        <Link to="/paymentConfirmation">
+          {hasItems && <button className={classes.button}>Order</button>}
+        </Link>
       </div>
     </div>
   );
