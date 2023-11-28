@@ -4,6 +4,7 @@ import Banner from "../../components/Banner/Banner";
 import { Box, Grid, Modal } from "@mui/material";
 import Card from "../../components/Layout/Card/Card";
 import CartProvider from "../../store/CartProvider";
+import CartIcon from "../Cart/CartIcon";
 
 //estou criando uma API para usar definitiva com o server.json, essa é provisoria
 
@@ -72,6 +73,9 @@ export const Products = () => {
             <p>{product?.price}</p>
             <p>{product?.description}</p>
             <button className={classes.button} onClick={submitHandler}>
+              <span className={classes.icon}>
+                <CartIcon />
+              </span>
               Add Cart
             </button>
           </Box>

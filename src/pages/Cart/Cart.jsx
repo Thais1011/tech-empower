@@ -33,7 +33,7 @@ const Cart = () => {
   );
 
   return (
-    <div>
+    <div className={classes.cartPage}>
       {cartItems}
       <div className={classes.total}>
         <span> Total Amount</span>
