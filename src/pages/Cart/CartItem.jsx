@@ -4,6 +4,7 @@ const CartItem = (props) => {
   console.log("passou aqui");
   return (
     <li className={classes["cart-item"]}>
+      <img src={props.image} alt={props.title} />
       <div>
         <h2>{props.name}</h2>
         <div className={classes.summary}>

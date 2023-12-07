@@ -25,7 +25,7 @@ const CartButton = () => {
   }, [cartCtx.items]);
   return (
     <Link to="/cart">
-      <button className={btnClasses} onClick={<Cart />}>
+      <button className={btnClasses}>
         <span className={classes.icon}>
           <CartIcon />
         </span>
